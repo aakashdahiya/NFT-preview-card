@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: black;
+  color: papayawhip;
+}
+
+.container {
+  background-color: hsl(217, 54%, 11%);
+  width: 1440px;
+  height: 800px;
+  margin: 50px auto;
+  padding: 200px 0;
+}
+.inner-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* align-items: center; */
+  margin: 0 auto;
+  background-color: hsl(216, 50%, 16%);
+  width: 400px;
+  padding: 30px 30px 50px;
+  border-radius: 25px;
+  box-shadow: 46px 53px 36px -37px rgba(0, 0, 0, 0.32);
+  position: relative;
+}
+
+.inner-background h1,
+p {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+}
+.inner-background h1 {
+  font-weight: 600;
+  font-size: 30px;
+  margin: 20px 0;
+  transition: 0.5s;
+}
+
+.inner-background h1:hover {
+  cursor: pointer;
+  color: turquoise;
+}
+
+.description {
+  font-weight: 300;
+  font-size: 25px;
+  width: 400px;
+  margin-bottom: 30px;
+  color: hsl(215, 51%, 70%);
+  line-height: 33px;
+}
+
+.top-element {
+  position: relative;
+}
+
+.top-element img {
+  width: 400px;
+  border-radius: 20px;
+  object-fit: fill;
+}
+
+.main-image-overlay {
+  position: absolute;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: hsl(178, 100%, 50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.top-element:hover .main-image-overlay {
+  opacity: 0.2;
+}
+.price {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  margin-bottom: 35px;
+  font-size: 20px;
+}
+
+.price span {
+  position: absolute;
+  right: 30px;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+
+hr {
+  height: 0;
+  border-radius: 5px;
+  border: 1px solid hsl(215, 51%, 70%);
+  margin-bottom: 35px;
+}
+
+.bottom-element {
+  display: flex;
+  align-items: center;
+}
+.icon-image {
+  width: 50px;
+  border: solid;
+  border-radius: 50px;
+  border-width: 2px;
+  border-color: aliceblue;
+}
+
+.author {
+  color: hsl(215, 51%, 70%);
+  padding-left: 20px;
+  font-size: 19px;
+}
+
+.author-name {
+  color: white;
+  transition: 0.5s;
+}
+
+.author-name:hover {
+  color: turquoise;
+  cursor: pointer;
+}
